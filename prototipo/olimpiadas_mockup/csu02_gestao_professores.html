@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CSU02 GESTAO PROFESSORES</title>
+  <style>
+:root{
+  --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#dff6ff; --primary:#0078D7; --danger:#ef4444;
+  --max-width:1100px; --gap:18px; --radius:10px;
+}
+*{box-sizing:border-box}
+body{font-family:Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:var(--bg); color:#222}
+.app{max-width:1200px;margin:24px auto;padding:18px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.logo{background:var(--accent);width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:18px}
+aside{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04);height:calc(100vh - 120px);position:sticky;top:20px;overflow:auto}
+aside nav a{display:block;padding:10px;border-radius:8px;color:var(--primary);text-decoration:none;margin-bottom:6px;font-weight:600}
+main{min-height:80vh}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.03);margin-bottom:14px}
+h1,h2,h3{margin:0 0 8px 0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input[type=text], input[type=email], input[type=date], select, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ee;background:#fff}
+textarea{min-height:110px;resize:vertical}
+.full{grid-column:1 / -1}
+.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+button{padding:10px 12px;border-radius:8px;border:0;cursor:pointer;font-weight:700}
+.btn-primary{background:var(--primary);color:white}
+.btn-ghost{background:transparent;border:1px solid #e5e7eb;color:var(--muted)}
+.btn-danger{background:var(--danger);color:white}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:10px;border-bottom:1px solid #f1f5f9;text-align:left;font-size:14px}
+th{color:var(--muted)}
+@media (max-width:900px){.layout{grid-template-columns:1fr} aside{position:relative;height:auto} form{grid-template-columns:1fr}}
+.muted{color:var(--muted);font-size:13px}
+.search-row{display:flex;gap:8px;flex-wrap:wrap}
+.small{padding:8px 10px;font-size:13px}
+</style>
+</head>
+<body>
+  <div class="app">
+    <header style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+      <div class="logo">📚</div>
+      <div>
+        <h1 style="margin:0">CSU02 GESTAO PROFESSORES</h1>
+        <div class="muted">Protótipo navegável — menu lateral com links fictícios</div>
+      </div>
+    </header>
+    <div class="layout">
+      
+<aside class="card" aria-label="Navegação lateral">
+  <strong>Menu</strong>
+  <nav style="margin-top:10px">
+    <a href="csu01_gestao_alunos.html">CSU01 • Alunos</a>
+    <a href="csu02_gestao_professores.html">CSU02 • Professores</a>
+    <a href="csu03_gestao_olimpiadas.html">CSU03 • Olimpíadas</a>
+    <a href="csu04_gestao_inscricoes.html">CSU04 • Inscrições</a>
+    <a href="csu05_gestao_premiacoes.html">CSU05 • Premiações</a>
+    <a href="csu06_gestao_avisos.html">CSU06 • Avisos</a>
+    <a href="csu07_gestao_duvidas.html">CSU07 • Dúvidas</a>
+    <a href="csu08_conteudo_didatico.html">CSU08 • Conteúdo</a>
+    <a href="csu09_desafios_matematicos.html">CSU09 • Desafios</a>
+    <a href="csu10_usuarios.html">CSU10 • Usuários</a>
+    <a href="csu11_reunioes_online.html">CSU11 • Reuniões</a>
+    <a href="csu12_notificacoes.html">CSU12 • Notificações</a>
+    <a href="csu13_filtro_olimpiadas.html">CSU13 • Filtro</a>
+    <a href="csu14_relatorio_desempenho.html">CSU14 • Relatórios</a>
+    <a href="csu15_ranking_alunos.html">CSU15 • Ranking</a>
+    <a href="csu16_calendario_eventos.html">CSU16 • Calendário</a>
+    <a href="csu17_recuperacao_senha.html">CSU17 • Recuperação</a>
+    <a href="csu18_feedbacks.html">CSU18 • Feedbacks</a>
+  </nav>
+</aside>
+
+      <main>
+        
+  <section class="card"><h2>CSU02 — Gestão de Professores</h2>
+    <article class="card"><h3>Cadastro de Professor</h3>
+      <form>
+        <div><label>Nome</label><input type="text"></div>
+        <div><label>CPF</label><input type="text"></div>
+        <div><label>E-mail</label><input type="email"></div>
+        <div><label>Disciplina</label><input type="text"></div>
+        <div class="full"><label>Biografia</label><textarea></textarea></div>
+        <div class="actions full"><button class="btn-ghost">Cancelar</button><button class="btn-primary">Salvar</button></div>
+      </form>
+    </article>
+    <article class="card"><h3>Perfil do Professor</h3>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:64px;height:64px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center">👩‍🏫</div>
+      <div><strong>Prof. Carlos Pereira</strong><div class="muted">Disciplina: Matemática • Email: carlos@escola.edu.br</div></div>
+      <div style="margin-left:auto"><a class="btn-ghost" href="csu02_gestao_professores.html">Editar</a> <a class="btn-danger" href="csu02_gestao_professores.html">Excluir</a></div></div>
+    </article>
+  </section>
+  
+      </main>
+    </div>
+    <footer style="text-align:center;margin-top:18px;color:var(--muted)">Mockup — estático (sem JS) • Gerado automaticamente</footer>
+  </div>
+</body>
+</html>
